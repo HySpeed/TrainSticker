@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+  Changes:
+    - Renamed to Vehicle Sticker
+    - Added support for Car, Trank, Spidertron, Wagons
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
   Changes:
     - Release version, dev_mode disabled

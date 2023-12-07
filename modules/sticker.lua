@@ -1,7 +1,7 @@
 -- Sticker module
 -- processes sticker event
 
-local Utils      = require( "common.utils" )
+local Utils     = require( "common.utils" )
 local StickerUI = require( "modules.sticker_ui" )
 
 local Sticker = {}

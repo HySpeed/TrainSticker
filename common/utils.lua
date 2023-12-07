@@ -18,8 +18,26 @@ end
 
 -- -----------------------------------------------------------------------------
 
+function Utils.isSupportedType( selectedType )
+  local isSupported = false
+
+  if    selectedType == Constants.LOCOMOTIVE
+     or selectedType == Constants.CAR
+     or selectedType == Constants.TANK
+     or selectedType == Constants.SPIDERTRON
+     or selectedType == Constants.CARGO_WAGON
+     or selectedType == Constants.FLUID_WAGON
+     or selectedType == Constants.ARTILLERY_WAGON
+    then
+      isSupported = true
+  end
+  return isSupported
+end
+
+-- -----------------------------------------------------------------------------
+
 function Utils.skipIntro()
-  if Constants.DEV_MOD then
+  if Constants.DEV_MODE then
     if remote.interfaces["freeplay"] then -- In "sandbox" mode, freeplay is not available
       remote.call( "freeplay", "set_disable_crashsite", true ) -- removes crashsite and cutscene start
       remote.call( "freeplay", "set_skip_intro", true )        -- Skips popup message to press tab to start playing
